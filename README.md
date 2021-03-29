@@ -1,6 +1,6 @@
 # Belt-Conveyor-System
 
-Unity-version:2019.4.20f(LTS)
+###>Unity-version:2019.4.20f(LTS)###
 
 ## 取り込み上の注意
 ZIP形式でDLした後、**Unity**に取り込んだ際に多少のエラーが出てくる場合があるかもしれません。
