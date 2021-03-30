@@ -1,10 +1,14 @@
 # Belt-Conveyor-System
 
+
 ### > Unity-version:2019.4.20f(LTS)
+
 
 ## unity上でのinspectorの操作
 **TransformのRotateを変えても上に置かれたものの動く方向は変わりません**
  - 例えばBeltconveyorを4つに複製して、四角状に配置した場合
+
+
 
 ## 取り込み上の注意
 ZIP形式でDLした後、**Unity**に取り込んだ際に多少のエラーが出てくる場合があるかもしれません。
