@@ -14,7 +14,7 @@
 ![このように変な挙動をしますよ](https://user-images.githubusercontent.com/81568941/113006997-caf11180-91b0-11eb-94f7-8009017274d4.gif)
 - これは上の物体が動く方向を、スクリプトにてワールド座標のX軸に対してどの向き(前後左右,`forward`,`back`,`left`,`right`)に動かすかを決めているため、角度をずらすとワールド座標上のX軸の方向とローカル座標上のX軸の方向がずれてしまうためにおこるものです。
 対処法として、初めに、それぞれのHierarchy内の`BeltConveyor`の中に含まれる`Onbelt`オブジェクト(上の物体が載るところのオブジェクト)を選択します。(**Picture2**)
-次にinspectorにてアタッチされている`BeltConveyorSimple`コンポーネントの`Chosen Vec`パラメータを選択し、表示された向きの選択肢を、***そのBeltConveyorの上にある物体が運ばれるはずの方向の、ワールド座標軸の方向***に合わせた選択肢にします。(Picture3)
+次にinspectorにてアタッチされている`BeltConveyorSimple`コンポーネントの`Chosen Vec`パラメータを選択し、表示された向きの選択肢を、***そのBeltConveyorの上にある物体が運ばれるはずの向きの、ワールド座標軸における方向***に合わせた選択肢にします。(Picture3)
 #### Picture2
 ![このOnBeltをせんたくします](https://user-images.githubusercontent.com/81568941/113010478-d42fad80-91b3-11eb-9f96-f9f8ce844ab3.png)
 #### Picture3
