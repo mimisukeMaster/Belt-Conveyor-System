@@ -5,7 +5,7 @@
 
 
 ## unity上でのinspectorの操作
-**TransformのRotateを変えても上に置かれたものの動く方向は変わりません**
+**[注意]Scene上で複製する際、TransformのRotateを変えても上に置かれたものの動く方向は変わりません。**
  - 例えばBeltconveyorを4つに複製して、四角状に配置した場合(Picture1)
  - そのまま特に設定せずにプレイすると、上の青いCubeは異なるBeltConveyorに乗り移っても同じ方向に移動を続けてしまいます。(Gif1)
 #### Picture1
