@@ -1,7 +1,7 @@
 # Belt-Conveyor-System
 
 
-### > Unity-version:2019.4.20f(LTS)
+### > Made with Unity-version:2019.4.20f(LTS)
 
 
 ## unity上でのinspectorの操作
