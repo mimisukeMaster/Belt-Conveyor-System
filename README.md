@@ -23,9 +23,9 @@
 今回のような四角状に配置した場合、真上から全体を見るとPicture4のようになります。
 右上にある軸を見て分かる通り、Z軸は写真上の上側です。よって`1`の`*BeltConveyor*`の`ChosenVec`をZ軸に対して正の向きに動かしたいので逆の`Back`を選択します。
 同様にして`2`の`*BeltConveyor*`の`ChosenVec`はZ軸に対して右側に動かしたいので逆の`left`を選択し、`3`のはZ軸に対して負の向きに動かしたいので逆の`forward`を、`4`のはZ軸に対して左側に動かしたいので逆の`Right`を選択します。(Picture5)
-####Picture4
+#### Picture4
 ![この場合の上から見た向き](https://user-images.githubusercontent.com/81568941/113303649-429f7780-933c-11eb-8dab-819d2f317655.png)
-####Picture5
+#### Picture5
 ![こういう風に設定します](https://user-images.githubusercontent.com/81568941/113309162-d293f000-9341-11eb-9579-540713596a60.png)
 
 
