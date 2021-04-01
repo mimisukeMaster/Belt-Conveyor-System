@@ -58,7 +58,6 @@ public class ConveyorSideSimple : MonoBehaviour
         /// <returns></returns>
         Quaternion movepos = Quaternion.Euler(0, (400 * FlatSpeed) / (51 * Mathf.PI)  ,  0);
         Side_rb.MoveRotation(pos * movepos);
-        Debug.Log(Eulerspeed);
 
     }
 }
