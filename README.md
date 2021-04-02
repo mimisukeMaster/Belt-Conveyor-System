@@ -37,10 +37,12 @@
 **[注意2]Scene内での下側のBeltConveyorのObject(GameObject名:UnderBelt)は_「^(緑の矢印)」マークが逆になるため、ConveyorSimple.csのReverseパラメータにチェックを入れてください**
 - 入れなくてもエラーが起こる訳ではありませんが、見た目が変になります。施す前と後で比較します:
 #### Before (Picture6)in PlayMode,Gif3
+- [ ] Reverse
 ![Reverse入れないとインプレイ](https://user-images.githubusercontent.com/81568941/113423861-2ff37400-940a-11eb-811d-a59d4b86e451.png)
 ![Reverseなしgif](https://user-images.githubusercontent.com/81568941/113424070-7e087780-940a-11eb-9279-888bfdb3f36e.gif)
 
 #### After (Picture7)in PlayMode,Gif4
+- [x] Reverse
 ![Reverseありだとインプレイ](https://user-images.githubusercontent.com/81568941/113423891-3da8f980-940a-11eb-8352-f915038adaec.png)
 ![Reverseありgif](https://user-images.githubusercontent.com/81568941/113424086-852f8580-940a-11eb-8bc5-7a90e063abd2.gif)
 
