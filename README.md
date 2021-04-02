@@ -11,7 +11,7 @@
 #### Picture1
 ![このように四角状に配置します](https://user-images.githubusercontent.com/81568941/113006553-72ba0f80-91b0-11eb-9bab-64afa3b0034e.png)
 #### Gif1
-![このように変な挙動をしますよ](https://user-images.githubusercontent.com/81568941/113006997-caf11180-91b0-11eb-94f7-8009017274d4.gif)
+![このように変な挙動をします_2gif](https://user-images.githubusercontent.com/81568941/113430621-73071480-9415-11eb-8d58-84dec7fbe78e.gif)
 - これは上の物体が、動く方向をスクリプトでワールド座標のZ軸に対してどの向き(前後左右(`forward`,`back`,`left`,`right`))に動かすかを決めているため、角度をずらすとワールド座標上のZ軸の方向とローカル座標上のZ軸の方向がずれることにより生じるものです。
 - → 対処法として、初めに、それぞれのHierarchy内の`BeltConveyor`の中に含まれる`Onbelt`オブジェクト(上の物体が載るところのオブジェクト)を選択します。(**Picture2**)
 次にinspectorにてアタッチされている`BeltConveyorSimple`コンポーネントの`Chosen Vec`パラメータを選択し、表示された向きの選択肢を、***そのBeltConveyorの上にある物体が運ばれるはずの、ワールド座標Z軸における向き***に合わせた選択肢にします。(Picture3)
@@ -23,22 +23,23 @@
 今回のような四角状に配置した場合、真上から全体を見るとPicture4のようになります。
 右上にある軸を見て分かる通り、Z軸は写真上の上側です。よって`1`の`BeltConveyor`の`ChosenVec`をZ軸に対して正の向きに動かしたいので`forward`を選択します。
 同様にして`2`の`*BeltConveyor*`の`ChosenVec`はZ軸に対して右側に動かしたいので`right`を選択し、`3`のはZ軸に対して負の向きに動かしたいので`back`を、`4`のはZ軸に対して左側に動かしたいので`left`を選択します。(Picture5)
-- 以上の設定を行うとVideo１のような正しい挙動になります。
+- 以上の設定を行うとGif2のような正しい挙動になります。
 #### Picture4
 ![この場合の上から見た向き](https://user-images.githubusercontent.com/81568941/113303649-429f7780-933c-11eb-8dab-819d2f317655.png)
 #### Picture5
 ![1sen](https://user-images.githubusercontent.com/81568941/113421069-65e22980-9405-11eb-83e8-b539b73c74bd.png)
-#### Video1
-https://user-images.githubusercontent.com/81568941/113429558-b2346600-9413-11eb-8473-1c4dc23bbdb7.mp4
+#### Gif2
+![Vec指定後](https://user-images.githubusercontent.com/81568941/113430024-6504c400-9414-11eb-9267-7c20d8b4f03e.gif)
+
 
 
 **[注意2]Scene内での下側のBeltConveyorのObject(GameObject名:UnderBelt)は_「^(緑の矢印)」マークが逆になるため、ConveyorSimple.csのReverseパラメータにチェックを入れてください**
 - 入れなくてもエラーが起こる訳ではありませんが、見た目が変になります。
-#### Before (Picture6)in PlayMode,Gif2
+#### Before (Picture6)in PlayMode,Gif3
 ![Reverse入れないとインプレイ](https://user-images.githubusercontent.com/81568941/113423861-2ff37400-940a-11eb-811d-a59d4b86e451.png)
 ![Reverseなしgif](https://user-images.githubusercontent.com/81568941/113424070-7e087780-940a-11eb-9279-888bfdb3f36e.gif)
 
-#### After (Picture7)in PlayMode,Gif3
+#### After (Picture7)in PlayMode,Gif4
 ![Reverseありだとインプレイ](https://user-images.githubusercontent.com/81568941/113423891-3da8f980-940a-11eb-8352-f915038adaec.png)
 ![Reverseありgif](https://user-images.githubusercontent.com/81568941/113424086-852f8580-940a-11eb-8bc5-7a90e063abd2.gif)
 
