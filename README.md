@@ -14,15 +14,15 @@
 ![このように変な挙動をしますよ](https://user-images.githubusercontent.com/81568941/113006997-caf11180-91b0-11eb-94f7-8009017274d4.gif)
 - これは上の物体が、動く方向をスクリプトでワールド座標のZ軸に対してどの向き(前後左右(`forward`,`back`,`left`,`right`))に動かすかを決めているため、角度をずらすとワールド座標上のZ軸の方向とローカル座標上のZ軸の方向がずれることにより生じるものです。
 - → 対処法として、初めに、それぞれのHierarchy内の`BeltConveyor`の中に含まれる`Onbelt`オブジェクト(上の物体が載るところのオブジェクト)を選択します。(**Picture2**)
-次にinspectorにてアタッチされている`BeltConveyorSimple`コンポーネントの`Chosen Vec`パラメータを選択し、表示された向きの選択肢を、***そのBeltConveyorの上にある物体が運ばれるはずの、ワールド座標Z軸における向きの逆***に合わせた選択肢にします。(Picture3)
+次にinspectorにてアタッチされている`BeltConveyorSimple`コンポーネントの`Chosen Vec`パラメータを選択し、表示された向きの選択肢を、***そのBeltConveyorの上にある物体が運ばれるはずの、ワールド座標Z軸における向き***に合わせた選択肢にします。(Picture3)
 #### Picture2
 ![このOnBeltをせんたくします](https://user-images.githubusercontent.com/81568941/113010478-d42fad80-91b3-11eb-9f96-f9f8ce844ab3.png)
 #### Picture3
 ![ここをいじってｘ軸に対してどうかを指定します](https://user-images.githubusercontent.com/81568941/113010508-dabe2500-91b3-11eb-8bcf-e7106b7deba2.png)
 
 今回のような四角状に配置した場合、真上から全体を見るとPicture4のようになります。
-右上にある軸を見て分かる通り、Z軸は写真上の上側です。よって`1`の`*BeltConveyor*`の`ChosenVec`をZ軸に対して正の向きに動かしたいので逆の`Back`を選択します。
-同様にして`2`の`*BeltConveyor*`の`ChosenVec`はZ軸に対して右側に動かしたいので逆の`left`を選択し、`3`のはZ軸に対して負の向きに動かしたいので逆の`forward`を、`4`のはZ軸に対して左側に動かしたいので逆の`Right`を選択します。(Picture5)
+右上にある軸を見て分かる通り、Z軸は写真上の上側です。よって`1`の`*BeltConveyor*`の`ChosenVec`をZ軸に対して正の向きに動かしたいので`forward`を選択します。
+同様にして`2`の`*BeltConveyor*`の`ChosenVec`はZ軸に対して右側に動かしたいので`right`を選択し、`3`のはZ軸に対して負の向きに動かしたいので`back`を、`4`のはZ軸に対して左側に動かしたいので`left`を選択します。(Picture5)
 #### Picture4
 ![この場合の上から見た向き](https://user-images.githubusercontent.com/81568941/113303649-429f7780-933c-11eb-8dab-819d2f317655.png)
 #### Picture5
