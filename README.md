@@ -21,7 +21,7 @@
 ![ここをいじってｘ軸に対してどうかを指定します](https://user-images.githubusercontent.com/81568941/113010508-dabe2500-91b3-11eb-8bcf-e7106b7deba2.png)
 
 今回のような四角状に配置した場合、真上から全体を見るとPicture4のようになります。
-右上にある軸を見て分かる通り、Z軸は写真上の上側です。よって`1`の`*BeltConveyor*`の`ChosenVec`をZ軸に対して正の向きに動かしたいので`forward`を選択します。
+右上にある軸を見て分かる通り、Z軸は写真上の上側です。よって`1`の`BeltConveyor`の`ChosenVec`をZ軸に対して正の向きに動かしたいので`forward`を選択します。
 同様にして`2`の`*BeltConveyor*`の`ChosenVec`はZ軸に対して右側に動かしたいので`right`を選択し、`3`のはZ軸に対して負の向きに動かしたいので`back`を、`4`のはZ軸に対して左側に動かしたいので`left`を選択します。(Picture5)
 #### Picture4
 ![この場合の上から見た向き](https://user-images.githubusercontent.com/81568941/113303649-429f7780-933c-11eb-8dab-819d2f317655.png)
@@ -31,11 +31,11 @@
 
 **[注意2]Scene内での下側のBeltConveyorのObject(GameObject名:UnderBelt)は_「^(緑の矢印)」マークが逆になるため、ConveyorSimple.csのReverseパラメータにチェックを入れてください**
 - 入れなくてもエラーが起こる訳ではありませんが、見た目が変になります。
-#### Before(Picture6)in PlayMode,Gif2
+#### Before (Picture6)in PlayMode,Gif2
 ![Reverse入れないとインプレイ](https://user-images.githubusercontent.com/81568941/113423861-2ff37400-940a-11eb-811d-a59d4b86e451.png)
 ![Reverseなしgif](https://user-images.githubusercontent.com/81568941/113424070-7e087780-940a-11eb-9279-888bfdb3f36e.gif)
 
-#### After(Picture7)in PlayMode,Gif3
+#### After (Picture7)in PlayMode,Gif3
 ![Reverseありだとインプレイ](https://user-images.githubusercontent.com/81568941/113423891-3da8f980-940a-11eb-8352-f915038adaec.png)
 ![Reverseありgif](https://user-images.githubusercontent.com/81568941/113424086-852f8580-940a-11eb-8bc5-7a90e063abd2.gif)
 
