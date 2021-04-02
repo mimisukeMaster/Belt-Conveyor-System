@@ -12,7 +12,7 @@
 ![このように四角状に配置します](https://user-images.githubusercontent.com/81568941/113006553-72ba0f80-91b0-11eb-9bab-64afa3b0034e.png)
 #### Gif1
 ![このように変な挙動をします_2gif](https://user-images.githubusercontent.com/81568941/113430621-73071480-9415-11eb-8d58-84dec7fbe78e.gif)
-- これは上の物体が、動く方向をスクリプトでワールド座標のZ軸に対してどの向き(前後左右(`forward`,`back`,`left`,`right`))に動かすかを決めているため、角度をずらすとワールド座標上のZ軸の方向とローカル座標上のZ軸の方向がずれることにより生じるものです。
+- これは上側のBeltConveyorが、乗る物体の動く方向をスクリプトで決めていて、**ワールド座標のZ軸**に対してどの向き(前後左右(`forward`,`back`,`left`,`right`))に動かすかを指定しているため、角度をずらすとワールド座標上のZ軸の方向とBeltConveyorの見た目上の前方向がずれる(ローカル座標上のZ軸の向きが変わる)ことにより生じるものです。
 - → 対処法として、初めに、それぞれのHierarchy内の`BeltConveyor`の中に含まれる`Onbelt`オブジェクト(上の物体が載るところのオブジェクト)を選択します。(**Picture2**)
 次にinspectorにてアタッチされている`BeltConveyorSimple`コンポーネントの`Chosen Vec`パラメータを選択し、表示された向きの選択肢を、***そのBeltConveyorの上にある物体が運ばれるはずの、ワールド座標Z軸における向き***に合わせた選択肢にします。(Picture3)
 #### Picture2
