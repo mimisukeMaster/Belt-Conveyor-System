@@ -26,7 +26,8 @@
 #### Picture4
 ![この場合の上から見た向き](https://user-images.githubusercontent.com/81568941/113303649-429f7780-933c-11eb-8dab-819d2f317655.png)
 #### Picture5
-![こういう風に設定します](https://user-images.githubusercontent.com/81568941/113309162-d293f000-9341-11eb-9579-540713596a60.png)
+![1sen](https://user-images.githubusercontent.com/81568941/113421069-65e22980-9405-11eb-83e8-b539b73c74bd.png)
+
 
 
 
