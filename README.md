@@ -23,10 +23,13 @@
 今回のような四角状に配置した場合、真上から全体を見るとPicture4のようになります。
 右上にある軸を見て分かる通り、Z軸は写真上の上側です。よって`1`の`BeltConveyor`の`ChosenVec`をZ軸に対して正の向きに動かしたいので`forward`を選択します。
 同様にして`2`の`*BeltConveyor*`の`ChosenVec`はZ軸に対して右側に動かしたいので`right`を選択し、`3`のはZ軸に対して負の向きに動かしたいので`back`を、`4`のはZ軸に対して左側に動かしたいので`left`を選択します。(Picture5)
+- 以上の設定を行うとVideo１のような正しい挙動になります。
 #### Picture4
 ![この場合の上から見た向き](https://user-images.githubusercontent.com/81568941/113303649-429f7780-933c-11eb-8dab-819d2f317655.png)
 #### Picture5
 ![1sen](https://user-images.githubusercontent.com/81568941/113421069-65e22980-9405-11eb-83e8-b539b73c74bd.png)
+#### Video1
+https://user-images.githubusercontent.com/81568941/113429558-b2346600-9413-11eb-8473-1c4dc23bbdb7.mp4
 
 
 **[注意2]Scene内での下側のBeltConveyorのObject(GameObject名:UnderBelt)は_「^(緑の矢印)」マークが逆になるため、ConveyorSimple.csのReverseパラメータにチェックを入れてください**
@@ -42,9 +45,9 @@
 
 
 ## 取り込み上の注意
-ZIP形式でDLした後、**Unity**に取り込んだ際に多少のエラーが出てくる場合があるかもしれません。(**Picture6**)
+ZIP形式でDLした後、**Unity**に取り込んだ際に多少のエラーが出てくる場合があるかもしれません。(**Picture8**)
 正常通り再生できるのであれば問題いりませんが、万が一再生を阻止されエラーの修正を促されたり、明らかなバグ(画像情報がないなど)があれば、
 *GitHub Desktop* を開いて`File-> Clone repository` を選択し、この*repository*を**Clone**して取り込んでください。
-#### Picture6
+#### Picture8
 ![こんなエラーが発生することがあります](https://user-images.githubusercontent.com/81568941/113005972-e7407e80-91af-11eb-9eed-a690ae25b217.png)
 
