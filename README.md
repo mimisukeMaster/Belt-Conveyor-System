@@ -53,5 +53,6 @@ ZIP形式でDLした後、**Unity**に取り込んだ際に多少のエラーが
 正常通り再生できるのであれば問題いりませんが、万が一再生を阻止されエラーの修正を促されたり、明らかなバグ(画像情報がないなど)があれば、
 *GitHub Desktop* を開いて`File-> Clone repository` を選択し、この*repository*を**Clone**して取り込んでください。
 #### Picture8
-![こんなエラーが発生することがあります](https://user-images.githubusercontent.com/81568941/113005972-e7407e80-91af-11eb-9eed-a690ae25b217.png)
+![こんなエラーが発生することがあります](https://user-images.githubusercontent.com/81568941/115557905-206e9900-a2ed-11eb-8cca-c939f5f7d56a.png)
+
 
